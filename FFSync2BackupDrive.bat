@@ -57,6 +57,6 @@ GOTO FINISH
 
 :FINISH
 IF NOT "%POWEROFF%" == "" (
-	shutdown -s -t 60
+  shutdown -s -t 60
 )
 ENDLOCAL
