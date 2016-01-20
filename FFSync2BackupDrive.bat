@@ -31,7 +31,7 @@ SET /P POWEROFF=Computer nach Abschluss herunterfahren (ENTER=Nein, sonst gib 'j
 %~DP0FFSYNC\freefilesync.exe %~DP0FFSYNC\batchrun.ffs_batch
 
 IF "%BERICHT%" == "ja" (
-	GOTO BERICHT
+  GOTO BERICHT
 )
 
 FOR %%I IN ("FFSYNC\batchrun*.log") DO START "" notepad.exe "%%I"
