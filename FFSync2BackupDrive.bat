@@ -1,5 +1,5 @@
 @REM THE FOLDER NAME WHERE BACKUP WILL BE STORED
-@SET BACKUP_FOLDER=TRANSCEND64
+@SET BACKUP_FOLDER=SANDISC128GB
 
 @REM --- DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------
 
@@ -19,14 +19,14 @@ IF "%BACKUP_DRIVE%" == "" (
 SET THIS_DRIVE=%~D0
 
 ECHO.
-ECHO                %THIS_DRIVE% --^> %BACKUP_DRIVE%\%BACKUP_FOLDER%
+ECHO       %THIS_DRIVE% --^> %BACKUP_DRIVE%\%BACKUP_FOLDER%
 ECHO.
 
 SET BERICHT=
-SET /P BERICHT=Bericht per Mail senden (ENTER=Nein, gonst gib 'ja' ein.)? 
+SET /P BERICHT="Bericht per Mail senden? (Ja/Nein) [NEIN] : "
 ECHO.
 SET POWEROFF=
-SET /P POWEROFF=Computer nach Abschluss herunterfahren (ENTER=Nein, sonst gib 'ja' ein.)? 
+SET /P POWEROFF="Computer nach Abschluss herunterfahren? (Ja/Nein) [NEIN] : "
 
 %~DP0FFSYNC\freefilesync.exe %~DP0FFSYNC\batchrun.ffs_batch
 
