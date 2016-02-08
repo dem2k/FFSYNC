@@ -3,7 +3,7 @@
 
 @REM --- DO NOT CHANGE ANYTHING BELOW THIS LINE ---------------------------
 
-@ECHO On
+@ECHO OFF
 IF NOT "%OS%"=="Windows_NT" EXIT /B
 SETLOCAL
 
